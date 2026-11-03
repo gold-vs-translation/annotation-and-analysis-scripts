@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.sqlite
+*.sqlite3
+.env
+.venv/
+venv/
+*.xz
+*.xlsx
+*.tex
+output/
+temp/
+cache*/
+dump*/
+*.batch_input.jsonl
+
+# Human annotation demo data pending privacy review
+/data/dummy/human_annotations/
+/data/dummy/pre_review_csvs/
+
+# Demo data excluded pending redistribution review
+/data/dummy/
