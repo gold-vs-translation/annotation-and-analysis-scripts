@@ -1,8 +1,7 @@
 # Cultural Sensitivity Annotation Pipeline
 
-Code and data processing pipeline for annotating cultural sensitivity in
-exam-style multiple-choice benchmarks across five Nordic / Baltic languages
-(DA, ET, LT, NB, SV) plus English reference data (Global-MMLU / Global-MMLU-Lite).
+Code and data processing pipeline for annotating cultural sensitivity in exam-style multiple-choice benchmarks across five Nordic / Baltic languages (DA, ET, LT, NB, SV) plus English reference data (Global-MMLU / Global-MMLU-Lite).
+
 
 ## Overview
 
@@ -69,6 +68,11 @@ cs-annotation/
         └── incremental_proxy_validity.py   # Incremental R² regression
 ```
 
+For an overview of the ranking analyses, incremental proxy validity, robustness checks, and a reproducible smoke test, see the [Analysis Guide](docs/ANALYSIS_GUIDE.md).
+
+The released annotations, merged model scores, and reference outputs are available in the [companion data repository](https://github.com/gold-vs-translation/cs-annotation-data).
+
+
 ## Setup
 
 ### Requirements
@@ -107,8 +111,7 @@ bash scripts/run_pipeline_demo.sh
 
 ### Stage A: Automatic GPT Annotation
 
-Annotates MC-exam items with cultural sensitivity labels using GPT-5.2
-structured outputs. Supports both synchronous (debug) and batch (production) modes.
+Annotates MC-exam items with cultural sensitivity labels using GPT-5.2 structured outputs. Supports both synchronous (debug) and batch (production) modes.
 
 ```bash
 export OPENAI_API_KEY="sk-..."
